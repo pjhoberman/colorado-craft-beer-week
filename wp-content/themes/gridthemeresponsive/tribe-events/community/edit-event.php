@@ -19,7 +19,7 @@ if ( !defined('ABSPATH') ) { die('-1'); } ?>
 <?php do_action( 'tribe_events_community_form_before_template' ); ?>
 
 <form method="post" enctype="multipart/form-data">
-
+	<p>Please fill out as much detail as you can about your event. Allow 48 hours for approval and posting. Any questions? Email Steve at manager@coloradobeer.org.</p>
 	<?php wp_nonce_field( 'ecp_event_submission' ); ?>
 
 	<!-- Event Title -->
