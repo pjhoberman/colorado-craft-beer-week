@@ -1,0 +1,318 @@
+/**
+ * Community Events Stylesheet
+ * The stylesheet for Community Events.
+ *
+ * Override this stylesheet in your own theme by creating a file at
+ * [your-theme]/tribe-events/community/tribe-events-community.css
+ *
+ * @package TribeCommunityEvents
+ * @since  1.0
+ * @author Modern Tribe Inc.
+ *
+ */
+
+/* = Global & Miscellaneous Styles
+=============================================*/
+/* Font */
+#tribe-community-events {
+	font-family: Helvetica, Arial, sans;
+}
+
+/* Pagination */
+#tribe-community-events .pagination {
+	clear: both;
+	font-size: 11px;
+	line-height: 13px;
+	padding: 20px 0;
+	position: relative;
+	text-align: center;
+}
+#tribe-community-events .pagination span,
+.pagination a {
+	background: #555;
+	color: #fff;
+	margin: 2px 2px 2px 0;
+	padding: 6px 9px 5px;
+	text-decoration: none;
+	width: auto;
+}
+#tribe-community-events .pagination a:hover {
+	background: #3279bb;
+	color: #fff;
+}
+#tribe-community-events .pagination .current {
+	background: #999;
+	color: #fff;
+	padding: 6px 9px 5px;
+}
+
+/* Footer */
+#tribe-community-events .tribe-events-community-footer {
+	margin-top: 20px;
+}
+
+#tribe-community-events .tribe-events-community-footer,
+#tribe-community-events p.login-submit {
+	text-align: center;
+}
+
+/* Various Messages */
+#tribe-community-events div.updated,
+div.error {
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Helvetica, Arial, sans;
+	font-size: 12px;
+	margin: 5px 0 10px;
+	padding: 0 .6em;
+}
+#tribe-community-events div.updated p,
+#tribe-community-events div.error p {
+	margin: 0;
+	padding: 2px;
+}
+#tribe-community-events div.updated,
+.login .message {
+	background-color: #ffffE0;
+	border-color: #e6db55;
+}
+#tribe-community-events div.error,
+.login .message {
+	background-color: #ffebe8;
+	border-color: #c00;
+}
+
+
+/* = "Submit an Event" Form View Template Styles
+   @ Template: form.php & form-meta.php
+=============================================*/
+#tribe-community-events .tribe-events-community-details td,
+#tribe-community-events .tribe-events-community-details table,
+#tribe-community-events .tribe-events-community-details tr {
+	border: 0;
+}
+#tribe-community-events td.icon {
+	vertical-align: middle;
+}
+.tribe-events-community-details tr td:first-child {
+	width: 170px;
+}
+#tribe-community-events input[type="text"],
+#tribe-community-events textarea {
+	background-color: #fff;
+}
+#tribe-community-events label.error {
+	color: red;
+	font-weight: 700;
+}
+#tribe-community-events #event_cost input {
+	width: auto;
+}
+
+#tribe-community-events h4 {
+	font-weight: 700;
+	margin-top: 0;
+}
+#tribe-community-events small.req {
+	color: #999;
+	font-size: 75%;
+	font-style: italic;
+}
+#tribe-community-events .eventForm {
+	margin-top: 20px;
+}
+
+/* Event Image */
+#tribe-community-events .eventForm .event-image p {
+	text-align: center;
+}
+#tribe-community-events .eventForm .event-image img {
+	max-width: 100%;
+	max-height: 300px;
+}
+#tribe-community-events .eventForm .tribe-community-events-preview-image a {
+	clear: both;
+	display: block;
+}
+#tribe-community-events .eventForm td {
+	vertical-align: top;
+}
+#tribe-community-events .eventForm #custom-recurrence-frequency td {
+	vertical-align: middle;
+}
+#tribe-community-events .eventForm small.note {
+	clear: both;
+	display: block;
+}
+
+/* Event Title */
+#tribe-community-events .events-community-post-title input,
+#tribe-community-events .events-community-post-content textarea {
+	clear: both;
+	width: 98%;
+}
+
+/* Event Content */
+#tribe-community-events .events-community-post-content {
+	margin-top: .75em;
+	margin-bottom: 0;
+}
+
+/* Event Categories */
+#tribe-community-events #event-categories {
+	overflow-y: hidden;
+}
+#tribe-community-events #event-categories .hidden_category {
+	display: none;
+}
+#tribe-community-events #event-categories ul {
+	list-style-type: none;
+	width: 95%;
+	margin: 0;
+}
+#tribe-community-events #event-categories ul li {
+	float: left;
+	clear: right;
+	margin: 10px 0 0 0;
+	padding: 0 10px 0 0;
+	width: 30%;
+}
+#tribe-community-events #event-categories ul li.hidden_category {
+	/*display: none;*/
+}
+#tribe-community-events #event-categories ul li input[type="checkbox"] {
+	margin-right: 5px;
+}
+
+#tribe-community-events .aes, #tribe-community-events .aes * {
+	overflow: hidden;
+	visibility: hidden;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+}
+
+.tribe_community_edit .ui-widget.ui-datepicker {
+	font-size: 1em;
+}
+
+.tribe_community_edit .ui-datepicker-calendar {
+	line-height: 1;
+}
+
+/* = "My Events" Page Template Styles
+   @ Template: event-list.php
+=============================================*/
+#tribe-community-events .row-actions {
+	font-size: 75%;
+}
+#tribe-community-events .row-actions span {
+	white-space: nowrap;
+}
+#tribe-community-events .title a {
+	text-decoration: none;
+}
+#tribe-community-events th {
+	padding: 0 5px;
+}
+#wp-tcepostcontent-wrap {
+	margin-top: -25px;
+}
+#tribe-community-events .icon {
+	height: 16px;
+	margin: 2px;
+	min-height: 16px;
+	min-width: 16px;
+	width: 16px;
+}
+
+/* Header */
+/* Buttons */
+#add-new,
+#my-events {
+	float: left;
+	margin-bottom: 1em;
+	margin-right: 1em;
+}
+
+/* Log Out */
+#not-user {
+	float: right;
+	margin-bottom: 1em;
+}
+
+/* Log In */
+#tribe-community-events #loginform p {
+	margin: auto;
+	width: 40%;
+}
+#tribe-community-events #loginform p label {
+	display: block;
+	font-size: 90%;
+}
+#tribe-community-events #loginform p.remember label {
+	display: inline;
+}
+#tribe-community-events #loginform p input[type=text],
+#tribe-community-events #loginform p input[type=password] {
+	margin-bottom: 1em;
+	width: 100%;
+}
+#tribe-community-events .register {
+	font-size: 90%;
+	text-align: center;
+}
+
+/* Responsive Columns */
+.my-events th,
+.my-events td {
+   display: none;
+}
+.my-events th.essential,
+.my-events td.essential {
+   display: table-cell;
+}
+@media screen and (min-width: 1075px) {
+   .my-events th.optional2,
+   .my-events td.optional2 {
+      display: table-cell;
+   }
+}
+@media screen and (min-width: 900px) {
+   .my-events th.optional1,
+   .my-events td.optional1 {
+      display: table-cell;
+   }
+}
+.table-menu-wrapper {
+   position: absolute;
+   margin-left: 100px;
+}
+.table-menu {
+	width: 150px;
+	background-color: #fff;
+	z-index: 200;
+	border: 1px solid #CCC;
+	position: absolute;
+}
+.table-menu-hidden {
+	left: -999em;
+	right: auto;
+}
+.table-menu ul {
+	list-style: none;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+.table-menu ul li {
+	margin-left: 0;
+}
+
+/* Override the editor CSS */
+.wp-switch-editor {
+	height: 26px !important;
+}

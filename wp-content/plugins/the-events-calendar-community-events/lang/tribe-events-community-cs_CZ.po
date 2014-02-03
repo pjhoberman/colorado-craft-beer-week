@@ -1,0 +1,1109 @@
+# Tribe Community Events by Modern Tribe, Inc.
+# Copyright (C) Modern Tribe, Inc.
+# This file is distributed under the same license as the Tribe Community Events package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Tribe Community Events\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-26 12:55-0800\n"
+"PO-Revision-Date: 2013-06-26 12:55-0800\n"
+"Last-Translator: Petr Baštán <pbastan@lop.cz>\n"
+"Language-Team: Modern Tribe, Inc. <pro@tri.be>\n"
+"Language: Czech\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"X-Poedit-Basepath: ./\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../tribe-community-events.php:60
+msgid "The Events Calendar"
+msgstr "The Events Calendar"
+
+#: ../tribe-community-events.php:61
+#, php-format
+msgid ""
+"To begin using The Events Calendar: Community Events, please install the "
+"latest version of <a href=\"%s\" class=\"thickbox\" title=\"%s\">The Events "
+"Calendar</a>."
+msgstr ""
+"Než začnete používat plugin The Events Calendar: Community Events, "
+"nainstalujte si prosím aktuální verzi pluginu <a href=\"%s\" class=\"thickbox"
+"\" title=\"%s\">The Events Calendar</a>."
+
+#: ../admin-views/community-options-template.php:37
+msgid "Placed in the Trash"
+msgstr "Přesunuty do koše"
+
+#: ../admin-views/community-options-template.php:38
+msgid "Permanently Deleted"
+msgstr "Nenávratně smazány"
+
+#: ../admin-views/community-options-template.php:45
+msgid "No Default"
+msgstr "Není výchozí"
+
+#: ../admin-views/community-options-template.php:54
+msgid "Use New Venue/No Default"
+msgstr "Není výchozí / Vytvořit nové místo"
+
+#
+#: ../admin-views/community-options-template.php:70
+msgid "Community Events Settings"
+msgstr "Nastavení komunitních akcí"
+
+#: ../admin-views/community-options-template.php:75
+#, fuzzy, php-format
+msgid ""
+"<p>Community Events enables users to submit events through a form on your "
+"site. Whether soliciting contributions from anonymous users or registered "
+"members, you have complete editorial control over what makes it onto the "
+"calendar.</p><p>Before jumping in, make sure you've checked out our <a href="
+"\"%s\">Community Events new user primer</a>: it features both videos and "
+"written steps covering how the plugin works and what the different options "
+"can do to enhance your site."
+msgstr ""
+"<p>Plugin Komunitní akce umožňuje uživatelům přidávat nové akce "
+"prostřednictvím formuláře přímo na stránkách vašeho webu. Ať už umožníte "
+"přidávání příspěvků anonymním uživatelům nebo jen registrovaným členům, vy "
+"máte plnou redakční kontrolu nad tím, co se nakonec dostane do kalendáře "
+"akcí.</p><p>Než budete pokračovat, nejprve se podívejte na naši <a href=\"%s"
+"\">příručku nového uživatele Komunitních akcí</a>. Obsahuje jak videa tak "
+"popsané postupy o tom, jak plugin funguje a jak různé nastavení může "
+"ovlivnit a obohatit váš web."
+
+#: ../admin-views/community-options-template.php:85
+msgid "General"
+msgstr "Obecné"
+
+#: ../admin-views/community-options-template.php:91
+msgid "Allow anonymous submissions"
+msgstr "Povolit anonymní příspěvky"
+
+#: ../admin-views/community-options-template.php:92
+#, fuzzy
+msgid ""
+"Check this box to allow users to submit events without having a WordPress "
+"account"
+msgstr ""
+"Zaškrtnutím této volby povolíte uživatelům přidávat akce bez toho aby měli "
+"vytvořený účet ve WordPressu."
+
+#: ../admin-views/community-options-template.php:100
+msgid "Use visual editor for event descriptions"
+msgstr "Použít vizuální editor při zadávání popisu akce"
+
+#: ../admin-views/community-options-template.php:108
+msgid "Default status for submitted events"
+msgstr "Výchozí stav pro přidané akce"
+
+#: ../admin-views/community-options-template.php:118
+msgid "Community rewrite slug"
+msgstr "Název v URL komunity"
+
+#: ../admin-views/community-options-template.php:122
+#, fuzzy
+msgid ""
+"The slug used for building the community events URL - it is appended to the "
+"main events slug. Your current community events URLs are"
+msgstr ""
+"Název v URL použitý při tvorbě URL adres komunitních akcí &ndash; je "
+"připojen za hlavní název v URL pro akce."
+
+#: ../admin-views/community-options-template.php:135
+msgid "Alerts"
+msgstr "Výstrahy"
+
+#: ../admin-views/community-options-template.php:140
+msgid "Send an email alert when a new event is submitted"
+msgstr "Poslat upozornění emailem po přidání nové akce"
+
+#: ../admin-views/community-options-template.php:148
+msgid "Email addresses to be notified"
+msgstr "Upozornit emailové adresy"
+
+#: ../admin-views/community-options-template.php:151
+msgid "One address per line"
+msgstr "Jedna adresa na řádek"
+
+#: ../admin-views/community-options-template.php:157
+msgid "Members"
+msgstr "Registrovaní uživatelé"
+
+#: ../admin-views/community-options-template.php:162
+msgid "Control the permissions for your logged in users. Allow them to:"
+msgstr ""
+
+#
+#: ../admin-views/community-options-template.php:167
+msgid "Edit their submissions"
+msgstr "Upravovat své příspěvky"
+
+#
+#: ../admin-views/community-options-template.php:175
+msgid "Remove their submissions"
+msgstr "Odstranit své příspěvky"
+
+#: ../admin-views/community-options-template.php:183
+msgid "Deleted events should be:"
+msgstr "Odstraněné akce budou:"
+
+#: ../admin-views/community-options-template.php:192
+#: ../lib/tribe-community-events.class.php:529
+#: ../lib/tribe-community-events.class.php:551
+#: ../lib/tribe-community-events.class.php:986
+#: ../lib/tribe-community-events.class.php:1630
+#: ../lib/tribe-community-events.class.php:1787 ../views/hooks/delete.php:35
+#: ../views/hooks/edit-organizer.php:50
+msgid "My Events"
+msgstr "Moje akce"
+
+#: ../admin-views/community-options-template.php:197
+msgid "Events per page"
+msgstr "Akcí na stránku"
+
+#: ../admin-views/community-options-template.php:198
+msgid "This is the number of events displayed per page"
+msgstr "Počet akcí, které se zobrazí na jedné stránce"
+
+#: ../admin-views/community-options-template.php:206
+msgid "Date/time format"
+msgstr "Formát data a času"
+
+#: ../admin-views/community-options-template.php:207
+#, fuzzy
+msgid "Help with date &amp; time formatting"
+msgstr "Nápověda pro formátování data a času"
+
+#: ../admin-views/community-options-template.php:215
+msgid "Access Control"
+msgstr "Řízení přístupu"
+
+#: ../admin-views/community-options-template.php:220
+#, fuzzy
+msgid "Block access to WordPress dashboard"
+msgstr "Zablokovat přístup k administraci WordPressu"
+
+#: ../admin-views/community-options-template.php:221
+msgid "Also disables the admin bar"
+msgstr "Zároveň se vypne navigační lišta"
+
+#: ../admin-views/community-options-template.php:229
+msgid "Roles to block"
+msgstr "Zablokovat pro úrovně"
+
+#: ../admin-views/community-options-template.php:239
+msgid "Redirect URL"
+msgstr "URL adresa pro přesměrování"
+
+#: ../admin-views/community-options-template.php:240
+#, fuzzy
+msgid ""
+"Where users will be sent if they attempt to access the admin<br>Should be a "
+"full url e.g. <code>http://domain.com/path/</code> <br> Leave blank for "
+"homepage"
+msgstr ""
+"Kam budou přesměrováni uživatelé, pokud se pokusí o přístup do administrace."
+"<br>Měla by to být plná URL adresa, např. http://domain.com/cesta/ <br> "
+"Pokud pole necháte prázdné, použije se úvodní stránka."
+
+#: ../admin-views/community-options-template.php:250
+#, fuzzy
+msgid "PRO Options"
+msgstr "Nastavení PRO verze"
+
+#: ../admin-views/community-options-template.php:256
+msgid "Default venue for submitted events"
+msgstr "Výchozí místo konání pro přidané akce"
+
+#: ../admin-views/community-options-template.php:267
+msgid "Default organizer for submitted events"
+msgstr "Výchozí pořadatel pro přidané akce"
+
+#: ../lib/tribe-community-events.class.php:268
+msgid "edit"
+msgstr "upravit"
+
+#: ../lib/tribe-community-events.class.php:269
+msgid "add"
+msgstr "pridat"
+
+#: ../lib/tribe-community-events.class.php:270
+msgid "delete"
+msgstr "smazat"
+
+#: ../lib/tribe-community-events.class.php:271
+msgid "list"
+msgstr "seznam"
+
+#: ../lib/tribe-community-events.class.php:273
+msgid "venue"
+msgstr "misto"
+
+#: ../lib/tribe-community-events.class.php:274
+msgid "organizer"
+msgstr "poradatele"
+
+#: ../lib/tribe-community-events.class.php:275
+msgid "event"
+msgstr "akci"
+
+#: ../lib/tribe-community-events.class.php:401
+#: ../lib/tribe-community-events.class.php:913
+msgid "Edit a Venue"
+msgstr "Upravit místo konání"
+
+#: ../lib/tribe-community-events.class.php:423
+#: ../lib/tribe-community-events.class.php:916
+msgid "Edit an Organizer"
+msgstr "Upravit pořadatele"
+
+#: ../lib/tribe-community-events.class.php:444
+#: ../lib/tribe-community-events.class.php:910
+msgid "Edit an Event"
+msgstr "Upravit akci"
+
+#: ../lib/tribe-community-events.class.php:466
+msgid "Redirect"
+msgstr "Přesměrování"
+
+#: ../lib/tribe-community-events.class.php:487
+#: ../lib/tribe-community-events.class.php:1008
+msgid "Submit an Event"
+msgstr "Přidat akci"
+
+#: ../lib/tribe-community-events.class.php:508
+#: ../lib/tribe-community-events.class.php:895
+msgid "Remove an Event"
+msgstr "Odstranit akci"
+
+#: ../lib/tribe-community-events.class.php:613
+msgid "Not found."
+msgstr "Nic nebylo nalezeno."
+
+#: ../lib/tribe-community-events.class.php:747
+msgid ""
+"Community Events requires non-default (pretty) permalinks to be enabled or "
+"the [tribe_community_events] shortcode to exist on a page."
+msgstr ""
+"Pro správný chod zkráceného zápisu [tribe_community_events] na stránkách, "
+"musí být zapnuté používání (hezkých) trvalých odkazů."
+
+#: ../lib/tribe-community-events.class.php:824
+#: ../lib/tribe-community-events.class.php:829
+msgid "Delete"
+msgstr "Smazat"
+
+#: ../lib/tribe-community-events.class.php:829
+msgid "Are you sure?"
+msgstr "Jste si opravdu jisti?"
+
+#: ../lib/tribe-community-events.class.php:898
+msgid "Remove a Venue"
+msgstr "Odstranit místo konání"
+
+#: ../lib/tribe-community-events.class.php:901
+msgid "Remove an Organizer"
+msgstr "Odstranit pořadatele"
+
+#: ../lib/tribe-community-events.class.php:904
+#: ../lib/tribe-community-events.class.php:919
+msgid "Unknown Post Type"
+msgstr "Neznámý typ obsahu."
+
+#: ../lib/tribe-community-events.class.php:1046
+msgid "This shortcode can only be used in pages."
+msgstr "Tento zkrácený zápis (shortcode) lze použit pouze na stránkách."
+
+#
+#: ../lib/tribe-community-events.class.php:1293
+msgid "Community Events Submission"
+msgstr "Nová komunitní akce"
+
+#: ../lib/tribe-community-events.class.php:1299
+msgid "Event Organizer"
+msgstr "Pořadatel akce"
+
+#: ../lib/tribe-community-events.class.php:1300
+msgid "Event Venue"
+msgstr "Místo konání akce"
+
+#
+#: ../lib/tribe-community-events.class.php:1301
+msgid "Description"
+msgstr "Popis"
+
+#: ../lib/tribe-community-events.class.php:1302
+msgid "Review Event"
+msgstr "Schválit akci"
+
+#: ../lib/tribe-community-events.class.php:1402
+msgid "Trashed Event #"
+msgstr "Odstraněna akce č. "
+
+#: ../lib/tribe-community-events.class.php:1405
+msgid "Deleted Event #"
+msgstr "Smazána akce č. "
+
+#: ../lib/tribe-community-events.class.php:1414
+#, php-format
+msgid "Removed occurence %s from Event #"
+msgstr "Bylo odstraněno datum opakování %s u akce č. "
+
+#: ../lib/tribe-community-events.class.php:1417
+#, php-format
+msgid "This event (#%s) does not appear to exist."
+msgstr "Tato akce (č. %s) patrně neexistuje."
+
+#: ../lib/tribe-community-events.class.php:1420
+msgid "You do not have permission to delete this event."
+msgstr "Nemáte dostatečné oprávnění pro smazání této akce."
+
+#: ../lib/tribe-community-events.class.php:1430
+msgctxt "As in \"go back to previous page\""
+msgid "Back"
+msgstr "Zpět"
+
+#: ../lib/tribe-community-events.class.php:1467
+#, php-format
+msgid ""
+"%sWarning:%s You are editing a recurring event. All changes will be applied "
+"to the entire series."
+msgstr ""
+"%sUpozornění:%s Upravujete opakující se akci. Všechny změny budou aplikovány "
+"na celou sérii."
+
+#: ../lib/tribe-community-events.class.php:1488
+msgid "Event not found."
+msgstr "Akce nebyla nalezena."
+
+#: ../lib/tribe-community-events.class.php:1497
+msgid "Please log in first."
+msgstr "Nejprve se prosím přihlaste."
+
+#: ../lib/tribe-community-events.class.php:1507
+msgid "You do not have permission to edit this event."
+msgstr "Nemáte dostatečné oprávnění pro úpravy této akce."
+
+#: ../lib/tribe-community-events.class.php:1530
+msgid "Event updated."
+msgstr "Akce byla aktualizována."
+
+#: ../lib/tribe-community-events.class.php:1534
+#: ../lib/tribe-community-events.class.php:1564
+#, php-format
+msgid ""
+"The original event is saved; recurrences not saved. Please reduce the number "
+"of recurrences to no more than %s.%s"
+msgstr ""
+"Původní akce je uložena, ale její opakování nikoliv. Snižte prosím počet "
+"opakování na maximální hodnotu %s.%s"
+
+#: ../lib/tribe-community-events.class.php:1537
+#: ../lib/tribe-community-events.class.php:1568
+msgid "Edit event"
+msgstr "Upravit akci"
+
+#: ../lib/tribe-community-events.class.php:1538
+#: ../lib/tribe-community-events.class.php:1570
+msgid "Submit another event"
+msgstr "Přidat další akci"
+
+#: ../lib/tribe-community-events.class.php:1544
+msgid "There was a problem saving your event, please try again."
+msgstr "Nastal problém při ukládání vaší akce. Zkuste to prosím znovu."
+
+#: ../lib/tribe-community-events.class.php:1560
+msgid "Event submitted."
+msgstr "Akce byla odeslána."
+
+#: ../lib/tribe-community-events.class.php:1581
+msgid "Event title and description are required."
+msgstr "Název a popis akce jsou vyžadovány."
+
+#: ../lib/tribe-community-events.class.php:1584
+msgid "Event description is required."
+msgstr "Popis akce je vyžadován."
+
+#: ../lib/tribe-community-events.class.php:1587
+msgid "Event title is required."
+msgstr "Název akce je vyžadován."
+
+#: ../lib/tribe-community-events.class.php:1590
+#: ../lib/tribe-community-events.class.php:1602
+msgid "There was a problem submitting your event, please try again."
+msgstr "Nastal problém při odesílání vaší akce. Zkuste to prosím znovu."
+
+#: ../lib/tribe-community-events.class.php:1599
+msgid "Please check the box below to prove you are not an evil spammer."
+msgstr "Zaškrtnutím níže uvedeného políčka prokážete, že nejste zlý spammer."
+
+#: ../lib/tribe-community-events.class.php:1633
+#: ../lib/tribe-community-events.class.php:1790 ../views/hooks/delete.php:36
+#: ../views/hooks/edit-organizer.php:52 ../views/hooks/event-list.php:90
+msgid "Not"
+msgstr "Nejste"
+
+#: ../lib/tribe-community-events.class.php:1633
+#: ../lib/tribe-community-events.class.php:1790 ../views/hooks/delete.php:36
+#: ../views/hooks/edit-organizer.php:52 ../views/hooks/event-list.php:90
+msgid "Log Out"
+msgstr "Odhlásit se"
+
+#: ../lib/tribe-community-events.class.php:1718
+#: ../lib/tribe-community-events.class.php:1837
+#: ../lib/tribe-community-events.class.php:1932
+msgid "This feature is not currently enabled."
+msgstr "Tato funkce není momentálně povolena."
+
+#: ../lib/tribe-community-events.class.php:1723
+msgid "You do not have permission to edit this venue."
+msgstr "Nemáte dostatečné oprávnění pro úpravy tohoto místa konání."
+
+#: ../lib/tribe-community-events.class.php:1749
+msgid "Venue updated."
+msgstr "Místo konání bylo aktualizováno."
+
+#: ../lib/tribe-community-events.class.php:1760
+msgid "Venue name cannot be blank."
+msgstr "Místo konání nemůže být prázdné."
+
+#: ../lib/tribe-community-events.class.php:1765
+msgid "There was a problem updating your venue, please try again."
+msgstr ""
+"Nastal problém při aktualizaci vašeho místa konání. Zkuste to prosím znovu."
+
+#: ../lib/tribe-community-events.class.php:1770
+msgid "Venue not found."
+msgstr "Místo konání nebylo nalezeno."
+
+#: ../lib/tribe-community-events.class.php:1807
+msgid "Please log in to edit this venue"
+msgstr "Pro upravení tohoto místa konání se musíte přihlásit"
+
+#: ../lib/tribe-community-events.class.php:1840
+msgid "You do not have permission to edit this organizer."
+msgstr "Nemáte dostatečné oprávnění pro úpravy tohoto pořadatele."
+
+#: ../lib/tribe-community-events.class.php:1860
+msgid "Organizer updated."
+msgstr "Pořadatel byl aktualizován."
+
+#: ../lib/tribe-community-events.class.php:1872
+msgid "Organizer name cannot be blank."
+msgstr "Jméno pořadatele nemůže být prázdné."
+
+#: ../lib/tribe-community-events.class.php:1877
+msgid "There was a problem updating this organizer, please try again."
+msgstr ""
+"Nastal problém při aktualizaci tohoto pořadatele. Zkuste to prosím znovu."
+
+#: ../lib/tribe-community-events.class.php:1882
+msgid "Organizer not found."
+msgstr "Pořadatel nebyl nalezen."
+
+#: ../lib/tribe-community-events.class.php:1904
+msgid "Please log in to edit this organizer"
+msgstr "Pro upravení tohoto pořadatele se musíte přihlásit"
+
+#: ../lib/tribe-community-events.class.php:1975
+msgid "Please log in to view your events"
+msgstr "Pro zobrazení svých akcí se musíte přihlásit"
+
+#: ../lib/tribe-community-events.class.php:2133
+msgid "I am not an evil spammer"
+msgstr "Prohlašuji, že nejsem zlý spammer"
+
+#: ../lib/tribe-community-events.class.php:2560
+msgid "Community"
+msgstr "Komunita"
+
+#: ../lib/tribe-community-events.class.php:2828
+msgid "Community: Submit Event"
+msgstr "Komunita: Přidat akci"
+
+#: ../lib/tribe-community-events.class.php:2836
+msgid "Community: My Events"
+msgstr "Komunita: Moje akce"
+
+#: ../lib/tribe-community-events.class.php:2845
+msgid "Community Events"
+msgstr "Komunitní akce"
+
+#: ../lib/tribe-community-events.class.php:2862
+msgid "Settings"
+msgstr "Nastavení"
+
+#: ../vendor/pue-client/admin-views/license-key.view.php:9
+#: ../vendor/pue-client/admin-views/license-key.view.php:13
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:185
+msgid "License Key"
+msgstr "Licenční klíč"
+
+#: ../vendor/pue-client/admin-views/license-key.view.php:10
+msgid "A valid license key is required for support and updates."
+msgstr "Platný licenční klíč je vyžadován pro podporu a aktualizace."
+
+#: ../vendor/pue-client/admin-views/license-key.view.php:16
+msgid "Replace empty fields"
+msgstr "Nahradit prázdná pole"
+
+#: ../vendor/pue-client/admin-views/license-key.view.php:25
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:186
+msgid "A valid license key is required for support and updates"
+msgstr "Platný licenční klíč je vyžadován pro podporu a aktualizace"
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:254
+msgid "License key(s) updated."
+msgstr "Licenční klíč(e) byl aktualizován."
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:294
+msgid "Sorry, key validation server is not available."
+msgstr "Omlouváme se, ale server k ověření klíče není dostupný."
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:296
+msgid "Sorry, this key is expired."
+msgstr "Omlouváme se, ale platnost tohoto klíče skončila."
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:298
+msgid "Sorry, this key is out of installs."
+msgstr "Omlouváme se, ale tento klíč je mimo instalaci."
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:300
+msgid "Sorry, this key is not valid."
+msgstr "Omlouváme se, ale tento klíč není platný."
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:303
+#, php-format
+msgid "Valid Key! Expires on %s"
+msgstr "Platný klíč! Platnost tohoto klíče skončí %s"
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:307
+#, php-format
+msgid ""
+"Hmmm... something's wrong with this validator. Please contact <a href=\"%s"
+"\">support.</a>"
+msgstr ""
+"Hmmm… něco je špatně s tímto validátorem. Kontaktujte prosím <a href=\"%s"
+"\">podporu.</a>"
+
+#: ../vendor/tribe-support/tribe-support.class.php:54
+msgid "Send a support request for this site."
+msgstr "Odeslat požadavek na podporu pro tento web."
+
+#: ../vendor/wp-router/WP_Route.class.php:36
+#, php-format
+msgid "Missing %s"
+msgstr "Chybí %s"
+
+#: ../vendor/wp-router/WP_Route.class.php:63
+#, php-format
+msgid "Property not found: %s."
+msgstr "Vlastnost nebyla nalezena: %s."
+
+#: ../vendor/wp-router/WP_Route.class.php:77
+#, php-format
+msgid "Invalid value for %s. Value may not be empty."
+msgstr "Neplatná hodnota pro %s. Hodnota nemůže být prázdná."
+
+#: ../vendor/wp-router/WP_Route.class.php:80
+#, php-format
+msgid "Invalid value for %1$s: %2$s. Value must be an array."
+msgstr "Neplatná hodnota pro %1$s: %2$s. Hodnota musí být typu pole."
+
+#: ../vendor/wp-router/WP_Route.class.php:250
+msgid "You are not authorized to access this page"
+msgstr "Nemáte oprávnění pro přístup na tuto stránku"
+
+#: ../vendor/wp-router/WP_Route.class.php:251
+msgid "Access Denied"
+msgstr "Přístup zamítnut"
+
+#: ../vendor/wp-router/WP_Router_Page.class.php:74
+msgid "WP Router Placeholder Page"
+msgstr "Zástupná stránka WP Routeru"
+
+#: ../vendor/wp-router/WP_Router_Utility.class.php:49
+#, php-format
+msgid "%1$s requires WordPress %2$s or higher and PHP %3$s or higher."
+msgstr "%1$s vyžaduje alespoň WordPress %2$s a alespoň PHP %3$s."
+
+#: ../views/hooks/delete.php:34 ../views/hooks/event-list.php:66
+msgid "Add New"
+msgstr "Vytvořit novou"
+
+#: ../views/hooks/edit-organizer.php:75
+msgid "Update Organizer"
+msgstr "Aktualizovat pořadatele"
+
+#: ../views/hooks/edit-organizer.php:75
+msgid "Submit Organizer"
+msgstr "Odeslat pořadatele"
+
+#: ../views/hooks/edit-venue.php:63 ../views/hooks/form-venue.php:46
+msgid "Venue Name:"
+msgstr "Místo konání:"
+
+#: ../views/hooks/edit-venue.php:65 ../views/hooks/form.php:67
+#: ../views/hooks/form.php:92
+msgid "(required)"
+msgstr "(vyžadováno)"
+
+#: ../views/hooks/edit-venue.php:79
+msgid "Venue Description:"
+msgstr "Popis místa konání:"
+
+#: ../views/hooks/edit-venue.php:112
+msgid "Update Venue"
+msgstr "Aktualizovat místo konání"
+
+#: ../views/hooks/edit-venue.php:112
+msgid "Submit Venue"
+msgstr "Odeslat místo konání"
+
+#: ../views/hooks/event-list.php:75
+msgid "Display"
+msgstr "Zobrazit"
+
+#: ../views/hooks/event-list.php:109
+msgid "Status"
+msgstr "Stav"
+
+#: ../views/hooks/event-list.php:110
+msgid "Title"
+msgstr "Název"
+
+#: ../views/hooks/event-list.php:111
+msgid "Organizer"
+msgstr "Pořadatel"
+
+#: ../views/hooks/event-list.php:112
+msgid "Venue"
+msgstr "Místo konání"
+
+#: ../views/hooks/event-list.php:113
+msgid "Category"
+msgstr "Rubrika"
+
+#: ../views/hooks/event-list.php:115
+msgid "Recurring?"
+msgstr "Opakující"
+
+#: ../views/hooks/event-list.php:116
+msgid "Start Date"
+msgstr "Počáteční datum"
+
+#: ../views/hooks/event-list.php:117
+msgid "End Date"
+msgstr "Koncové datum"
+
+#: ../views/hooks/event-list.php:158
+msgid "View"
+msgstr "Zobrazit"
+
+#: ../views/hooks/form-custom.php:43
+msgid "Event Custom Fields"
+msgstr "Uživatelská pole akce"
+
+#: ../views/hooks/form-meta.php:86
+msgid "Event Time &amp; Date"
+msgstr "Datum a čas akce"
+
+#: ../views/hooks/form-meta.php:91
+msgid ""
+"You have changed the recurrence rules of this event. Saving the event will "
+"update all future events.  If you did not mean to change all events, then "
+"please refresh the page."
+msgstr ""
+"Změnili jste pravidla pro opakování této akce.  Uložením této akce "
+"zaktualizujete i všechny budoucí akce.  Pokud jste nechtěli měnit všechny "
+"akce, pak prosím obnovte tuto stránku."
+
+#: ../views/hooks/form-meta.php:95
+msgid "All day event?"
+msgstr "Celodenní akce?"
+
+#: ../views/hooks/form-meta.php:102
+msgid "Start Date / Time:"
+msgstr "Datum / čas zahájení:"
+
+#: ../views/hooks/form-meta.php:106 ../views/hooks/form-meta.php:127
+msgid "YYYY-MM-DD"
+msgstr "RRRR-MM-DD"
+
+#: ../views/hooks/form-meta.php:124
+msgid "End Date / Time:"
+msgstr "Datum / čas ukončení:"
+
+#: ../views/hooks/form-meta.php:159
+msgid "Event Location Details"
+msgstr "Údaje o místě konání akce"
+
+#: ../views/hooks/form-meta.php:177
+msgid "Show Google Maps Link:"
+msgstr "Zobrazit odkaz na Mapy Google:"
+
+#: ../views/hooks/form-meta.php:191
+msgid "Show Google Map:"
+msgstr "Zobrazit Google mapu:"
+
+#: ../views/hooks/form-meta.php:217
+msgid "Event Organizer Details"
+msgstr "Údaje o pořadateli akce"
+
+#: ../views/hooks/form-meta.php:248
+msgid "Event Cost"
+msgstr "Vstupné na akci"
+
+#: ../views/hooks/form-meta.php:251
+msgid "Currency Symbol:"
+msgstr "Symbol měny:"
+
+#: ../views/hooks/form-meta.php:260
+msgid "Cost:"
+msgstr "Cena:"
+
+#: ../views/hooks/form-meta.php:266
+msgid "Leave blank to hide the field. Enter a 0 for events that are free."
+msgstr ""
+"Pokud nic nezadáte, pole bude skryto. Zadejte hodnotu 0 pro akce, které jsou "
+"zdarma."
+
+#: ../views/hooks/form-organizer.php:47
+msgid "Organizer Name"
+msgstr "Jméno pořadatele"
+
+#: ../views/hooks/form-organizer.php:59
+msgid "Phone"
+msgstr "Telefon"
+
+#: ../views/hooks/form-organizer.php:70
+msgid "Website"
+msgstr "Webová stránka"
+
+#: ../views/hooks/form-organizer.php:80
+msgid "Email"
+msgstr "Email"
+
+#: ../views/hooks/form-recurrence.php:97
+msgid "Recurrence:"
+msgstr "Opakování:"
+
+#: ../views/hooks/form-recurrence.php:105
+msgid "None"
+msgstr "Žádné"
+
+#: ../views/hooks/form-recurrence.php:106
+msgid "Every Day"
+msgstr "Každý den"
+
+#: ../views/hooks/form-recurrence.php:107
+msgid "Every Week"
+msgstr "Každý týden"
+
+#: ../views/hooks/form-recurrence.php:108
+msgid "Every Month"
+msgstr "Každý měsíc"
+
+#: ../views/hooks/form-recurrence.php:109
+msgid "Every Year"
+msgstr "Každý rok"
+
+#: ../views/hooks/form-recurrence.php:110
+msgid "Custom"
+msgstr "Vlastní"
+
+#: ../views/hooks/form-recurrence.php:114
+msgid "End"
+msgstr "Skončí"
+
+#: ../views/hooks/form-recurrence.php:117
+msgid "On"
+msgstr "dnem"
+
+#: ../views/hooks/form-recurrence.php:118
+msgid "After"
+msgstr "po uplynutí"
+
+#: ../views/hooks/form-recurrence.php:131
+msgid "You must select a recurrence end date"
+msgstr "Musíte vybrat datum, kdy se opakování ukončí"
+
+#: ../views/hooks/form-recurrence.php:140
+msgid "Frequency"
+msgstr "Četnost"
+
+#: ../views/hooks/form-recurrence.php:142
+msgid "Day(s)"
+msgstr "den (dny)"
+
+#: ../views/hooks/form-recurrence.php:142
+msgid "Daily"
+msgstr "denně"
+
+#: ../views/hooks/form-recurrence.php:143
+msgid "Week(s) on:"
+msgstr "týden (týdny) ve dnech:"
+
+#: ../views/hooks/form-recurrence.php:143
+msgid "Weekly"
+msgstr "týdně"
+
+#: ../views/hooks/form-recurrence.php:144
+msgid "Month(s) on the:"
+msgstr "měsíc(e) v den:"
+
+#: ../views/hooks/form-recurrence.php:144
+msgid "Monthly"
+msgstr "měsíčně"
+
+#: ../views/hooks/form-recurrence.php:145
+msgid "Year(s) on:"
+msgstr "rok(y) v měsících:"
+
+#: ../views/hooks/form-recurrence.php:145
+msgid "Yearly"
+msgstr "ročně"
+
+#: ../views/hooks/form-recurrence.php:148
+msgid "Every"
+msgstr "Každý"
+
+#: ../views/hooks/form-recurrence.php:160
+msgid "M"
+msgstr "Po"
+
+#: ../views/hooks/form-recurrence.php:161
+msgid "Tu"
+msgstr "Út"
+
+#: ../views/hooks/form-recurrence.php:162
+msgid "W"
+msgstr "St"
+
+#: ../views/hooks/form-recurrence.php:163
+msgid "Th"
+msgstr "Čt"
+
+#: ../views/hooks/form-recurrence.php:164
+msgid "F"
+msgstr "Pá"
+
+#: ../views/hooks/form-recurrence.php:165
+msgid "Sa"
+msgstr "So"
+
+#: ../views/hooks/form-recurrence.php:166
+msgid "Su"
+msgstr "Ne"
+
+#: ../views/hooks/form-recurrence.php:175
+#: ../views/hooks/form-recurrence.php:225
+msgid "First"
+msgstr "první"
+
+#: ../views/hooks/form-recurrence.php:176
+#: ../views/hooks/form-recurrence.php:226
+msgid "Second"
+msgstr "druhý"
+
+#: ../views/hooks/form-recurrence.php:177
+#: ../views/hooks/form-recurrence.php:227
+msgid "Third"
+msgstr "třetí"
+
+#: ../views/hooks/form-recurrence.php:178
+#: ../views/hooks/form-recurrence.php:228
+msgid "Fourth"
+msgstr "čtvrtý"
+
+#: ../views/hooks/form-recurrence.php:179
+#: ../views/hooks/form-recurrence.php:229
+msgid "Last"
+msgstr "poslední"
+
+#: ../views/hooks/form-recurrence.php:186
+#: ../views/hooks/form-recurrence.php:232
+msgid "Monday"
+msgstr "Pondělí"
+
+#: ../views/hooks/form-recurrence.php:187
+#: ../views/hooks/form-recurrence.php:233
+msgid "Tuesday"
+msgstr "Úterý"
+
+#: ../views/hooks/form-recurrence.php:188
+#: ../views/hooks/form-recurrence.php:234
+msgid "Wednesday"
+msgstr "Středa"
+
+#: ../views/hooks/form-recurrence.php:189
+#: ../views/hooks/form-recurrence.php:235
+msgid "Thursday"
+msgstr "Čtvrtek"
+
+#: ../views/hooks/form-recurrence.php:190
+#: ../views/hooks/form-recurrence.php:236
+msgid "Friday"
+msgstr "Pátek"
+
+#: ../views/hooks/form-recurrence.php:191
+#: ../views/hooks/form-recurrence.php:237
+msgid "Saturday"
+msgstr "Sobota"
+
+#: ../views/hooks/form-recurrence.php:192
+#: ../views/hooks/form-recurrence.php:238
+msgid "Sunday"
+msgstr "Neděle"
+
+#: ../views/hooks/form-recurrence.php:194
+#: ../views/hooks/form-recurrence.php:240
+msgid "Day"
+msgstr "den"
+
+#: ../views/hooks/form-recurrence.php:204
+msgid "Jan"
+msgstr "Led"
+
+#: ../views/hooks/form-recurrence.php:205
+msgid "Feb"
+msgstr "Úno"
+
+#: ../views/hooks/form-recurrence.php:206
+msgid "Mar"
+msgstr "Bře"
+
+#: ../views/hooks/form-recurrence.php:207
+msgid "Apr"
+msgstr "Dub"
+
+#: ../views/hooks/form-recurrence.php:208
+msgid "May"
+msgstr "Kvě"
+
+#: ../views/hooks/form-recurrence.php:209
+msgid "Jun"
+msgstr "Čer"
+
+#: ../views/hooks/form-recurrence.php:213
+msgid "Jul"
+msgstr "Čvc"
+
+#: ../views/hooks/form-recurrence.php:214
+msgid "Aug"
+msgstr "Srp"
+
+#: ../views/hooks/form-recurrence.php:215
+msgid "Sep"
+msgstr "Zář"
+
+#: ../views/hooks/form-recurrence.php:216
+msgid "Oct"
+msgstr "Říj"
+
+#: ../views/hooks/form-recurrence.php:217
+msgid "Nov"
+msgstr "Lis"
+
+#: ../views/hooks/form-recurrence.php:218
+msgid "Dec"
+msgstr "Pro"
+
+#: ../views/hooks/form-recurrence.php:223
+msgid "On the:"
+msgstr "V den:"
+
+#: ../views/hooks/form-venue.php:55
+msgid "Address:"
+msgstr "Adresa:"
+
+#: ../views/hooks/form-venue.php:63
+msgid "City:"
+msgstr "Město:"
+
+#: ../views/hooks/form-venue.php:69
+msgid "Country:"
+msgstr "Země:"
+
+#: ../views/hooks/form-venue.php:105
+msgid "State or Province:"
+msgstr "Kraj:"
+
+#: ../views/hooks/form-venue.php:109
+msgid "Select a State:"
+msgstr "Vyberte stát:"
+
+#: ../views/hooks/form-venue.php:122
+msgid "Postal Code:"
+msgstr "PSČ:"
+
+#: ../views/hooks/form-venue.php:130
+msgid "Phone:"
+msgstr "Telefon:"
+
+#: ../views/hooks/form.php:66
+msgid "Event Title:"
+msgstr "Název akce:"
+
+#: ../views/hooks/form.php:91
+msgid "Event Description:"
+msgstr "Popis akce:"
+
+#
+#: ../views/hooks/form.php:121
+msgid "Event Categories:"
+msgstr "Rubriky akce:"
+
+#
+#: ../views/hooks/form.php:155
+msgid "Event Image"
+msgstr "Obrázek akce"
+
+#: ../views/hooks/form.php:178
+msgid "Upload New"
+msgstr "Nahrát nový"
+
+#: ../views/hooks/form.php:180
+msgid "Upload"
+msgstr "Nahrát"
+
+#: ../views/hooks/form.php:188
+msgid "Images that are not png, jpg, or gif will not be uploaded."
+msgstr "Pouze obrázky ve formátu png, jpg nebo gif budou nahrány."
+
+#: ../views/hooks/form.php:216
+msgid "Update Event"
+msgstr "Aktualizovat akci"
+
+#: ../views/hooks/form.php:218
+msgid "Submit Event"
+msgstr "Odeslat akci"
+
+#: ../views/hooks/recurrence-dialog.php:41
+msgid "Which events do you wish to update?"
+msgstr "Které akce si přejete aktualizovat?"
+
+#: ../views/hooks/recurrence-dialog.php:43
+msgid "Delete Recurring Event"
+msgstr "Smazat opakující se akci"
+
+#: ../views/hooks/recurrence-dialog.php:44
+msgid "Select your desired action"
+msgstr "Vyberte si požadovanou akci"
+
+#~ msgid "Requires WordPress 3.3 +"
+#~ msgstr "Vyžaduje alespoň WordPress 3.3"
+
+#~ msgid "Allow logged in users to:"
+#~ msgstr "Povolit přihlášeným uživatelům:"
+
+#~ msgid "Your current community events URLs are"
+#~ msgstr "Vaše současné URL adresy pro komunitní akce jsou"
