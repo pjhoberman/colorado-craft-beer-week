@@ -256,4 +256,22 @@ register_widget('ex_search');
 
 // **** EX SEARCH END ****
 */
+
+// from http://www.wprecipes.com/how-to-change-wordpress-default-from-email-address
+add_filter('wp_mail_from', 'new_mail_from');
+add_filter('wp_mail_from_name', 'new_mail_from_name');
+
+function new_mail_from($old) {
+ return 'manager@coloradobeer.org';
+}
+function new_mail_from_name($old) {
+ return 'Colorado Craft Beer Week';
+}
+
+// from http://stackoverflow.com/questions/8127453/redirect-after-login-on-wordpress
+function admin_default_page() {
+  return '/events/community/add';
+}
+
+add_filter('login_redirect', 'admin_default_page');
 ?>

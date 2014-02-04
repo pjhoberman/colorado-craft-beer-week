@@ -18,6 +18,36 @@ if ( !defined('ABSPATH') ) { die('-1'); } ?>
 
 <?php do_action( 'tribe_events_community_form_before_template' ); ?>
 
+<script type="text/javascript">
+$(function() {
+	var help_text = {
+		"Colorado Brewers Guild Fundraiser:": "Is your event a Colorado Brewers Guild fundraiser? If so, select 'yes' and we'll be in touch about further details. CBG Fundraiser events get special placement in the event listings.",
+		"Ticketed event?:": "If your event needs tickets, Imbibe can host ticketing for you for free! Learn more at <a href='http://imbibedenver.com/ticketing'>imbibedenver.com/ticketing</a>.",
+		"Ticket URL:": ""
+	}
+	for(i=1; i<$('#event-meta tr').length; i++){ 
+		var $this_tr = $('#event-meta tr:eq(' + i + ')'),
+			the_text = help_text[$.trim($this_tr.find('td:eq(0)').text())],
+			true_text = the_text === undefined ? "" : the_text;
+
+		console.log("the_text: " + the_text);
+		console.log("true_text: " + true_text);
+		
+		$this_tr.append('<td><em>' + true_text + '</em></td>');
+	}
+
+	$('#event-categories label').each(function(){
+		if($.trim($(this).text()) === "Featured") {
+			$(this).parent('li').hide();
+		}
+	});
+});
+
+
+
+
+</script>
+
 <form method="post" enctype="multipart/form-data">
 	<p>Please fill out as much detail as you can about your event. Allow 48 hours for approval and posting. Any questions? Email Steve at manager@coloradobeer.org.</p>
 	<?php wp_nonce_field( 'ecp_event_submission' ); ?>
