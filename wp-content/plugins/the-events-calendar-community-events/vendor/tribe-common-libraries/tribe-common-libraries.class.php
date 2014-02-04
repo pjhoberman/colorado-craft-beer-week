@@ -36,7 +36,7 @@ if ( ! class_exists( 'TribeCommonLibraries' ) ) {
 
 		private function __construct() {
 			self::$tribe_registered_plugins = array();
-			add_action( 'plugins_loaded', array( __CLASS__, 'activate_plugins' ), 999 );
+			add_action( 'plugins_loaded', array( $this, 'activate_plugins' ), 999 );
 		}
 
 		/**

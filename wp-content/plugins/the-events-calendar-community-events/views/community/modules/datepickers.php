@@ -51,7 +51,7 @@ if ( get_post() ) {
 			</td>
 		</tr>
 
-		<tr>
+		<tr id="tribe-event-datepickers" data-startofweek="<?php echo get_option( 'start_of_week' ); ?>">
 			<td>
 				<?php _e( 'Start Date / Time:', 'tribe-events-community' ); ?>
 			</td>

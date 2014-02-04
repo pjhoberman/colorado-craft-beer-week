@@ -4,8 +4,8 @@ Contributors: PaulHughes01, jazbek, jbrinley, roblagatta, shane.pearlman, codear
 Tags: widget, events, simple, tooltips, grid, month, list, calendar, event, venue, community, registration, api, dates, date, plugin, posts, sidebar, template, theme, time, google maps, google, maps, conference, workshop, concert, meeting, seminar, summit, forum, shortcode, The Events Calendar, The Events Calendar PRO
 Donate link: http://m.tri.be/29
 Requires at least: 3.6
-Tested up to: 3.7.1
-Stable tag: 3.3
+Tested up to: 3.8
+Stable tag: 3.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -104,12 +104,12 @@ The plugin is produced by <a href="http://m.tri.be/3i">Modern Tribe Inc</a>.
 * Czech from Petr Bastan
 * Finnish by Ari-Pekka Koponen
 * French by Bastien BC
-* German by Oliver Heinrich
+* German by by Dieter Dannecker
 * Italian from Roberto Scano
 * Romanian by Mihai Burcea
 * Spanish from Frank Rondon
 
-* Previous translators include H√©ctor Gil Rizo, Jan, Marc Galliath, Jurgen Michiels, Vanessa Bianchi, Marco Infussi, Ali Senhaji, and Petr Bastan
+* Previous translators include H√©ctor Gil Rizo, Jan, Marc Galliath, Jurgen Michiels, Vanessa Bianchi, Marco Infussi, Ali Senhaji, Oliver Heinrich, and Petr Bastan
 
 == Add-Ons ==
 
@@ -132,7 +132,7 @@ Our Premium Plugins:
 * <a href="http://m.tri.be/ci" target="_blank">The Events Calendar: EDD Tickets Tickets</a>
 * <a href="http://m.tri.be/cu" target="_blank">The Events Calendar: WPEC Tickets</a>
 * <a href="http://m.tri.be/dp" target="_blank">The Events Calendar: Shopp Tickets</a>
-* The Events Calendar: Filter Bar (coming early 2014)
+* <a href="http://m.tri.be/fa" target="_blank">The Events Calendar: Filter Bar</a>
 
 == Upgrade Notice ==
 
@@ -143,6 +143,12 @@ This upgrade requires The Events Calendar 3.0+
 = IMPORTANT NOTICE =
 
 3.0 is a complete overhaul of the plugin, and as a result we're starting the changelog fresh. For release notes from the 2.x lifecycle, see <a href="http://m.tri.be/k">our 2.x release notes.</a>
+
+= 3.4 =
+
+* Added a “View Submitted Event” link that appears after a submission has gone through
+* Addressed an issue where the datepicker would not honor the core WordPress (thanks to lamagia on the forums for the report!)
+* Fixed a bug for PRO users where the custom venue and organizer configured in PRO would remain even after that plugin was deactivated
 
 = 3.3 =
 

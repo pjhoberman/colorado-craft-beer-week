@@ -2,7 +2,7 @@
 /*
  Plugin Name: The Events Calendar: Community Events
  Description: Community Events is an add-on providing additional functionality to the open source plugin The Events Calendar. Empower users to submit and manage their events on your website. <a href="http://tri.be/shop/wordpress-community-events/?utm_campaign=in-app&utm_source=docblock&utm_medium=plugin-community">Check out the full feature list</a>. Need more features? Peruse our selection of <a href="http://tri.be/products/?utm_campaign=in-app&utm_source=docblock&utm_medium=plugin-community" target="_blank">plugins</a>.
- Version: 3.3
+ Version: 3.4
  Author: Modern Tribe, Inc.
  Author URI: http://m.tri.be/21
  Text Domain: tribe-events-community

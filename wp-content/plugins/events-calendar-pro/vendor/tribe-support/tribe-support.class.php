@@ -15,7 +15,9 @@ if( !class_exists( 'TribeEventsProSupport' ) ) {
 		 * Enforce Singleton Pattern
 		 */
 		private static $instance;
-		public function getInstance() {
+
+
+		public static function getInstance() {
 			if(null == self::$instance) {
 				$className = __CLASS__;
 				self::$instance = new $className;

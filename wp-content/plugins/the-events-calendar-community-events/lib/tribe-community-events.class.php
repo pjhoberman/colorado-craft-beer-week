@@ -19,12 +19,12 @@ if ( !class_exists( 'TribeCommunityEvents' ) ) {
 		/**
 		 * The current version of Community Events
 		 */
-		const VERSION = '3.3';
+		const VERSION = '3.4';
 
 		/**
 		 * required The Events Calendar Version
 		 */
-		const REQUIRED_TEC_VERSION = '3.3';
+		const REQUIRED_TEC_VERSION = '3.4';
 
 		/**
 		 * Singleton instance variable
@@ -1441,9 +1441,11 @@ if ( !class_exists( 'TribeCommunityEvents' ) ) {
 		 */
 		public function doEventForm( $id = null ) {
 
-			// venue and organizer defaults- override ECP defaults
-			add_filter( 'tribe_display_event_venue_dropdown_id', array( $this, 'tribe_display_event_venue_dropdown_id' ) );
-			add_filter( 'tribe_display_event_organizer_dropdown_id', array( $this, 'tribe_display_event_organizer_dropdown_id' ) );
+			if ( TribeEvents::ecpActive() ) {
+				// venue and organizer defaults- override ECP defaults
+				add_filter( 'tribe_display_event_venue_dropdown_id', array( $this, 'tribe_display_event_venue_dropdown_id' ) );
+				add_filter( 'tribe_display_event_organizer_dropdown_id', array( $this, 'tribe_display_event_organizer_dropdown_id' ) );
+			}
 
 			$this->default_template_compatibility();
 			add_filter( 'tribe-post-origin', array( $this, 'filterPostOrigin' ) );
@@ -1524,7 +1526,7 @@ if ( !class_exists( 'TribeCommunityEvents' ) ) {
 					// update the event
 					if ( $tribe_event_id && $this->validate_submission_has_required_fields($_POST) ) {
 						if ( $this->saveEvent( $tribe_event_id ) ) {
-							$this->enqueueOutputMessage( __( 'Event updated.', 'tribe-events-community' ) );
+							$this->enqueueOutputMessage( __( 'Event updated.', 'tribe-events-community' ) . $this->get_view_edit_links($tribe_event_id) );
 
 							$this->enqueueOutputMessage( '<a href="' . $this->getUrl( 'add' ) . '">' . __( 'Submit another event', 'tribe-events-community' ) . '</a>' );
 
@@ -1539,7 +1541,7 @@ if ( !class_exists( 'TribeCommunityEvents' ) ) {
 							$tribe_event_id = $this->createEvent();
 
 						if ( $tribe_event_id ) {
-							$this->enqueueOutputMessage( __( 'Event submitted.', 'tribe-events-community' ) );
+							$this->enqueueOutputMessage( __( 'Event submitted.', 'tribe-events-community' ) . $this->get_view_edit_links($tribe_event_id) );
 
 							$this->enqueueOutputMessage( '<a href="' . $this->getUrl( 'add' ) . '">' . __( 'Submit another event', 'tribe-events-community' ) . '</a>' );
 
@@ -1619,6 +1621,24 @@ if ( !class_exists( 'TribeCommunityEvents' ) ) {
 
 			return $output;
 
+		}
+
+		private function get_view_edit_links( $event_id ) {
+			$view_link = $edit_link = '';
+			if ( get_post_status($event_id) == 'publish' || current_user_can('edit_post', $event_id) ) {
+				$view_link = sprintf('<a href="%s" class="view-event">%s</a>', get_permalink($event_id), __('View', 'tribe-events-community'));
+			}
+			if ( current_user_can('edit_post', $event_id) ) {
+				$edit_link = sprintf('<a href="%s" class="edit-event">%s</a>', tribe_community_events_edit_event_link($event_id), 'Edit');
+			}
+			if ( empty($view_link) && empty($edit_link) ) {
+				return '';
+			}
+			if ( !empty($view_link) && !empty($edit_link) ) {
+				$separator = '<span class="sep"> | </span>';
+				return ' (' . $view_link . $separator . $edit_link . ')';
+			}
+			return ' (' . $view_link . $edit_link . ')';
 		}
 
 		private function get_submitted_event() {
@@ -2840,7 +2860,7 @@ if ( !class_exists( 'TribeCommunityEvents' ) ) {
 		 * @author Paul Hughes
 		 * @since 1.0.1
 		 */
-		public function activateFlushRewrite() {
+		public static function activateFlushRewrite() {
 			$options = self::getOptions();
 			$options['maybeFlushRewrite'] = true;
 			update_option( self::OPTIONNAME, $options );
@@ -2854,7 +2874,7 @@ if ( !class_exists( 'TribeCommunityEvents' ) ) {
 		 * @author Paul Hughes
 		 * @since 1.0.1
 		 */
-		public function init_addon( $plugins ) {
+		public static function init_addon( $plugins ) {
 			$plugins['TribeCE'] = array( 'plugin_name' => 'The Events Calendar: Community Events', 'required_version' => TribeCommunityEvents::REQUIRED_TEC_VERSION, 'current_version' => TribeCommunityEvents::VERSION, 'plugin_dir_file' => basename( dirname( dirname( __FILE__ ) ) ) . '/tribe-community-events.php' );
 			return $plugins;
 		}
