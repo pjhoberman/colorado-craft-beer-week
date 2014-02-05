@@ -20,31 +20,27 @@ if ( !defined('ABSPATH') ) { die('-1'); } ?>
 
 <script type="text/javascript">
 $(function() {
-	var help_text = {
-		"Colorado Brewers Guild Fundraiser:": "Is your event a Colorado Brewers Guild fundraiser? If so, select 'yes' and we'll be in touch about further details. CBG Fundraiser events get special placement in the event listings.",
-		"Ticketed event?:": "If your event needs tickets, Imbibe can host ticketing for you for free! Learn more at <a href='http://imbibedenver.com/ticketing'>imbibedenver.com/ticketing</a>.",
-		"Ticket URL:": ""
-	}
-	for(i=1; i<$('#event-meta tr').length; i++){ 
-		var $this_tr = $('#event-meta tr:eq(' + i + ')'),
-			the_text = help_text[$.trim($this_tr.find('td:eq(0)').text())],
-			true_text = the_text === undefined ? "" : the_text;
+    "use strict";
+    var help_text = {
+        "Colorado Brewers Guild Fundraiser:": "Is your event a Colorado Brewers Guild fundraiser? If so, select 'yes' and we'll be in touch about further details. CBG Fundraiser events get special placement in the event listings.",
+        "Ticketed event?:": "If your event needs tickets, Imbibe can host ticketing for you for free! Learn more at <a href='http://imbibedenver.com/ticketing'>imbibedenver.com/ticketing</a>.",
+        "Ticket URL:": ""
+    };
+    for (i = 1;  i < $('#event-meta tr').length;  i++) {
+        var $this_tr = $('#event-meta tr:eq(' + i + ')'),
+            the_text = help_text[$.trim($this_tr.find('td:eq(0)').text())],
+            true_text = the_text === undefined ? "" : the_text;
 
-		console.log("the_text: " + the_text);
-		console.log("true_text: " + true_text);
-		
-		$this_tr.append('<td><em>' + true_text + '</em></td>');
-	}
+        $this_tr.append('<td><em>' + true_text + '</em></td>');
+    }
 
-	$('#event-categories label').each(function(){
-		if($.trim($(this).text()) === "Featured") {
-			$(this).parent('li').hide();
-		}
-	});
+    $('#event-categories label').each(function() {
+        if ($.trim($(this).text()) === "Featured" || 
+            $.trim($(this).text()) === "CBG Fundraiser") {
+            $(this).parent('li').hide();
+        }
+    });
 });
-
-
-
 
 </script>
 
