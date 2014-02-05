@@ -47,7 +47,7 @@
 query_posts($args);
     $x = 0;
     while (have_posts()) : the_post(); ?>                            
-    
+
         <?php
           $cat_text = '';
           foreach((get_the_category()) as $category) { 
@@ -59,17 +59,16 @@ query_posts($args);
 
         ?>
     
-        <?php if($x == 3) { ?>
+       <?php if($x == 3) { ?>
         <div class="home_post_cont home_post_cont_last post_box">
         <?php } else { ?>
         <div class="home_post_cont post_box">
         <?php } ?>
-            <?php $temp_content = explode(" ",substr(strip_tags(the_content()),0,175)); $temp_content[(count($temp_content)-1)] = ''; $new_content = implode(" ",$temp_content); ?>
-            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-post',array('alt' => 'post image', 'class' => '', 'title' => '<div class="home_post_content"><div class="in_title">' . the_title() . '</div><p>' . $new_content . '...</p></div><div class="home_post_cat">' . $cat_text . '</div>')); ?></a>
+            <?php $temp_content = explode(" ",substr(strip_tags(get_the_content()),0,175)); $temp_content[(count($temp_content)-1)] = ''; $new_content = implode(" ",$temp_content); ?>
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-post',array('alt' => 'post image', 'class' => '', 'title' => '<div class="home_post_content"><div class="in_title">' . get_the_title() . '</div><p>' . $new_content . '...</p></div><div class="home_post_cat">' . $cat_text . '</div>')); ?></a>
         </div><!--//home_post_cont-->
         
         <?php if($x == 3) { $x = -1; echo '<div class="clear"></div>'; } ?>
-
     <?php $x++; ?>
     <?php endwhile; ?>
     
