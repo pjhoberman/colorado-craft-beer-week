@@ -30,6 +30,12 @@ $has_venue = ( $venue_details ) ? ' vcard': '';
 $has_venue_address = ( $venue_address ) ? ' location': '';
 ?>
 
+<!-- Category Check -->
+<?php if( tribe_event_in_category("cbg-fundraiser") ) : ?>
+<div class="cbg-fundraiser">
+</div>
+<?php endif; ?>
+
 <!-- Event Cost -->
 <?php if ( tribe_get_cost() ) : ?> 
 	<div class="tribe-events-event-cost">

@@ -15,7 +15,6 @@
     <?php
     $category_ID = get_cat_id('featured');
     $category_ID = 9; // force to featured
-
     if (ereg('iPhone',$_SERVER['HTTP_USER_AGENT'])) {
     
         $args = array(
@@ -31,19 +30,21 @@
         $args = array(
                      'post_type' => 'tribe_events',
                      'posts_per_page' => 12,
-                     'cat' => -9,
-                     'include_children' => false,
+                     //'cat' => -9,
+                     //'category_name' => 'featured',
+                     //'include_children' => false,
+                     'tax_query' => array(
+		array(
+			'taxonomy' => 'tribe_events_cat',
+			'field' => 'id',
+			'terms' => array('9')
+		)
+	),
                      'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1)
                      );    
     
     }
-echo '<pre>';
-print_r($args);
-    print_r( query_posts($args));
-echo '</pre>';
 query_posts($args);
-$customPosts = new WP_Query($args);
-echo "Last SQL-Query: {$customPosts->request}";
     $x = 0;
     while (have_posts()) : the_post(); ?>                            
     
