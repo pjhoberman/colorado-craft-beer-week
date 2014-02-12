@@ -9,9 +9,9 @@
   </script>    
     
     <div id="content">
+<h1 class="cbg">Featured Beer Week Events</h1>
     
     <div id="content_inside">
-
     <?php
     $category_ID = get_cat_id('featured');
     $category_ID = 9; // force to featured
@@ -47,7 +47,9 @@
 query_posts($args);
     $x = 0;
     while (have_posts()) : the_post(); ?>                            
-
+<pre>
+<?php //print_r($post); ?>
+</pre>
         <?php
           $cat_text = '';
           foreach((get_the_category()) as $category) { 
