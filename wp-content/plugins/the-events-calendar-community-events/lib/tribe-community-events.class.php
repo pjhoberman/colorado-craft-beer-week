@@ -1701,8 +1701,8 @@ if ( !class_exists( 'TribeCommunityEvents' ) ) {
 		public function login_form( $caption = '' ) {
 			ob_start();
 			echo '<p>' . $caption . '</p>';
+			wp_register( '<div class="register">First time here? ', '</div>', true );
 			wp_login_form();
-			wp_register( '<div class="register">', '</div>', true );
 			return ob_get_clean();
 		}
 
