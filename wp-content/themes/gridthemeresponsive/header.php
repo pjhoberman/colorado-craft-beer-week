@@ -251,7 +251,7 @@ function($){
 <?php if (is_home()) { ?>
 <div id="intro">
 <div class="content">
-<h1>Colorado Craft Beer Week</h1>
+<h1>Colorado Craft Beer Week - March 21-29, 2014</h1>
 <p>Now under the direction of the Colorado Brewers Guild, Colorado Craft Beer Week is a nine-day celebration of Colorado’s craft brewers, pubs and restaurants.  Dozens of events will showcase brewers and educate beer lovers about Colorado’s unique craft beer community.
 </p>
 <a href="/events" class="cbg_button">Check the Calendar</a>
