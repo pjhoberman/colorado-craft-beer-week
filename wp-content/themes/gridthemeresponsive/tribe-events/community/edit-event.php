@@ -40,6 +40,9 @@ $(function() {
             $(this).parent('li').hide();
         }
     });
+
+    $('#show_hidden_categories').click();
+
 });
 
 </script>

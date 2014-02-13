@@ -291,4 +291,16 @@ function add_googleanalytics() { ?>
 
 </script>
 
-<?php } ?>
+<?php } 
+
+add_action( 'wp_enqueue_scripts', 'sd_frontend_script_and_style' );
+function sd_frontend_script_and_style() {
+  wp_deregister_script( 'jquery' );
+	$jquery_url = 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js';
+	wp_register_script( 'jquery', $jquery_url, array(), null, false );
+	wp_enqueue_script('jquery');
+}
+
+
+
+?>

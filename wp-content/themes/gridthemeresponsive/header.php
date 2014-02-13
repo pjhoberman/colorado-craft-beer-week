@@ -18,7 +18,7 @@
 
   <?php wp_head(); ?>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.hover_caption.js" type="text/javascript" charset="utf-8"></script>    
 
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.infinitescroll.js" type="text/javascript" charset="utf-8"></script>    
