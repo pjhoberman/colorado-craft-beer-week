@@ -252,7 +252,7 @@ function($){
 <div id="intro">
 <div class="content">
 <h1>Colorado Craft Beer Week</h1>
-<p>Intro content about Colorado Craft Beer Week goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac mauris elit. Nullam et diam imperdiet, auctor quam ac, adipiscing purus. 
+<p>Now under the direction of the Colorado Brewers Guild, Colorado Craft Beer Week is a nine-day celebration of Colorado’s craft brewers, pubs and restaurants.  Dozens of events will showcase brewers and educate beer lovers about Colorado’s unique craft beer community.
 </p>
 <a href="/events" class="cbg_button">Check the Calendar</a>
 </div>
