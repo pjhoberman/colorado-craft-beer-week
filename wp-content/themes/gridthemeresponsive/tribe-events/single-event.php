@@ -28,13 +28,14 @@ $event_id = get_the_ID();
 	<?php the_title( '<h2 class="tribe-events-single-event-title summary">', '</h2>' ); ?>
 
 	<div class="tribe-events-schedule updated published tribe-clearfix">
-		<h3><?php echo tribe_events_event_schedule_details(); ?>
+		<span><?php echo tribe_events_event_schedule_details(); ?>
 		<?php  if ( tribe_get_cost() ) :  ?>
 			<span class="tribe-events-divider">|</span>
 			<span class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?></span>
-		<?php endif; ?></h3>
+		<?php endif; ?></span>
 		<?php echo tribe_events_event_recurring_info_tooltip(); ?>
 	</div>
+<span class="venue_details"><?= tribe_get_venue() ?>, <?= tribe_get_address() ?>, <?= tribe_get_city() ?>, <?= tribe_get_state() ?> <?= tribe_get_zip() ?></span>
 
 	<!-- Event header -->
 	<div id="tribe-events-header" <?php tribe_events_the_header_attributes() ?>>
@@ -50,8 +51,11 @@ $event_id = get_the_ID();
 		<div id="post-<?php the_ID(); ?>" <?php post_class('vevent'); ?>>
 			<!-- Event featured image -->
 			<?php echo tribe_event_featured_image(); ?>
+<?= tribe_get_embedded_map(); ?>
 
 			<!-- Event content -->
+<h3>Event Details</h3>
+<?= tribe_get_event_website_link() ?>
 			<?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
 			<div class="tribe-events-single-event-description tribe-events-content entry-content description">
 				<?php the_content(); ?>
